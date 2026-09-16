@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fortune Cookie Generator</title>
+  <meta name="description" content="A little wisdom. A little disrespect. Crack open a fortune cookie and see what fate has to say.">
+  <meta property="og:title" content="Fortune Cookie Generator">
+  <meta property="og:description" content="Freshly baked. Mildly insulting. Your fortune awaits.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f8f2e5">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="fortunes.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="masthead"><a href="https://ka-chowf1.github.io/Dumb-Little-Internet/">↖ Dumb Little Internet</a><span>FRESHLY BAKED. MILDLY INSULTING.</span></header>
+  <main>
+    <div class="eyebrow"><span>✦</span> A SMALL SERVING OF DESTINY <span>✦</span></div>
+    <h1>Fortune Cookie<br><em>Generator.</em></h1>
+    <p class="intro">A little wisdom. A little disrespect.</p>
+    <section class="experience" aria-label="Open your fortune cookie">
+      <div class="seal" aria-hidden="true">100%<br><span>UNQUALIFIED<br>ADVICE</span></div>
+      <div class="stage" id="stage">
+        <div class="cookie-shadow"></div>
+        <button class="cookie" id="cookie" aria-label="Crack open the fortune cookie">
+          <svg viewBox="0 0 440 300" role="img" aria-label="Golden fortune cookie">
+            <defs><linearGradient id="dough" x1="0" y1="0" x2="0.6" y2="1"><stop stop-color="#ffe0a0"/><stop offset=".52" stop-color="#edb755"/><stop offset="1" stop-color="#c97a29"/></linearGradient><linearGradient id="fold"><stop stop-color="#b66a23"/><stop offset="1" stop-color="#e3a64a"/></linearGradient></defs>
+            <g class="half left-half"><path d="M220 74 C176 19 97 43 56 103 C23 153 47 224 103 252 C139 270 158 249 166 216 L192 153 L220 144Z" fill="url(#dough)" stroke="#a96227" stroke-width="3"/><path d="M63 120 C95 74 159 72 211 112 C184 126 164 158 152 195 C123 171 88 146 63 120Z" fill="#fbd38a"/><path d="M220 97 C169 104 139 154 151 211 C163 175 182 151 220 144Z" fill="url(#fold)"/><path d="M74 109 C111 65 167 65 196 86" fill="none" stroke="#ffe8b5" stroke-width="8" stroke-linecap="round"/><g fill="#b77930" opacity=".45"><circle cx="94" cy="166" r="3"/><circle cx="112" cy="211" r="2"/><circle cx="134" cy="103" r="2.5"/><circle cx="78" cy="193" r="2"/></g></g>
+            <g class="half right-half"><path d="M220 74 C264 19 343 43 384 103 C417 153 393 224 337 252 C301 270 282 249 274 216 L248 153 L220 144Z" fill="url(#dough)" stroke="#a96227" stroke-width="3"/><path d="M377 120 C345 74 281 72 229 112 C256 126 276 158 288 195 C317 171 352 146 377 120Z" fill="#fbd38a"/><path d="M220 97 C271 104 301 154 289 211 C277 175 258 151 220 144Z" fill="url(#fold)"/><path d="M244 86 C291 63 337 79 359 106" fill="none" stroke="#ffe8b5" stroke-width="8" stroke-linecap="round"/><g fill="#b77930" opacity=".45"><circle cx="345" cy="162" r="3"/><circle cx="329" cy="214" r="2"/><circle cx="310" cy="106" r="2.5"/><circle cx="365" cy="196" r="2"/></g></g>
+          </svg>
+        </button>
+        <div class="fortune-slip" id="slip" aria-hidden="true"><span class="slip-label">YOUR FORTUNE</span><p id="fortune"></p><span class="slip-footer">✦ THE COOKIE HAS SPOKEN ✦</span></div>
+      </div>
+      <div class="actions"><button class="open-button" id="open">Open my cookie <span aria-hidden="true">↗</span></button><button class="open-button" id="reset" hidden>Crack another <span aria-hidden="true">↻</span></button></div>
+      <p class="hint" id="hint">Go on. What's the worst it could say?</p>
+      <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+    </section>
+    <footer><span>BAKED WITH QUESTIONABLE INTENTIONS</span><span>NO REFUNDS ON DESTINY. <span aria-hidden="true">✦</span></span></footer>
+  </main>
+</body>
+</html>
